@@ -15,8 +15,9 @@ var articleRouter = require('./routes/articles');
 
 var app = express();
 
-mongoose.connect("mongodb://127.0.0.1:27017/blogTDD")
-// mongodb://blogtdd:blogtdd@ds233500.mlab.com:33500/blogtdd
+// mongoose.connect("mongodb://127.0.0.1:27017/blogTDD")
+mongoose.connect("mongodb://blogtdd:blogtdd@ds233500.mlab.com:33500/blogtdd")
+
 
 app.use(cors())
 // view engine setup
